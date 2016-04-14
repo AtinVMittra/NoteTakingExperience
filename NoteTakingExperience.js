@@ -1,4 +1,17 @@
 $(document).ready(function(){
+	var users = [
+  		{username: 'Bob', fullname: 'Bob Russel'},
+  		{username: 'Kimmy', fullname: 'Kimmy Schmidt'},
+  		{username: 'Jimmy', fullname: 'Jimmy Fallon'},
+	];
+
+	 var NTDL = [
+  		{type: 'note'},
+  		{type: 'task'},
+  		{type: 'decision'},
+  		{type: 'learning'},
+	]; 
+
     $("button").mouseup(function(){
         $(this).css("background-color", "#FFFFFF");
 	});
@@ -22,6 +35,16 @@ $(document).ready(function(){
     $("#learning").click(function(){
         $("#first").val("/learning");
     }); 
+
+	$('#first').suggest('/', {
+  		data: NTDL,
+  		map: function(user) {
+    		return {
+      			value: user.type,
+      			text: user.type
+		    }
+  		}
+	});
 
 });
 
