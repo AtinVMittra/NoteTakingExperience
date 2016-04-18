@@ -2,19 +2,22 @@
 .body {
 	align: center;
 	width: 960px;
-	height: 400px;
+	height: 600px;
 	background-color: #FAFAFA;
+	margin-left: 30px;
 	border: 2px solid black;
 }
 
 .text {
 	float: left;
 	width: 900px;
-	height: 30px;
+	height: 100px;
 	background-color: #FFFFFF;
 	border: 1px solid black;
 	font-family: lato;
 	font-size: 16px;
+	margin-bottom: 20px;
+	padding: 4px;
 }
 
 button {
@@ -30,11 +33,13 @@ button {
 }
 
 h1 {
+	margin-left: 30px;
 	font-family: Lato-bold;
 	font-size: 30px;
 }
 
 h2 {
+	align:center;
 	font-family: Lato-regular;
 	font-size: 20px;
 }
@@ -42,6 +47,6 @@ h2 {
 p {
 	font-family: Lato-regular;
 	font-size: 14px;
-	margin: 30px
+	margin: 30px;
 }
 
